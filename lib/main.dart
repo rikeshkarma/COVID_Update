@@ -1,3 +1,4 @@
+import 'package:covidupdate/views/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,8 +8,9 @@ void main() {
 class CovidUpdate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('COVID Update'),
+    return MaterialApp(
+      title: 'COVID Update',
+      home: Home(),
     );
   }
 }
