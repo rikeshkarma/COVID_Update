@@ -23,6 +23,8 @@ class _HelpState extends State<Help> {
     HelplineNumbers(
         number: '9851255839, 9851255837, 9851255834', time: '8 AM to 8 PM'),
     HelplineNumbers(
+        number: '9843812308, 9863815908, 98015638', time: '12 AM to 11:59 AM'),
+    HelplineNumbers(
         number: 'Search for MoHP Nepal COVID-19',
         time: "on Viber to join the Ministry's community"),
   ];
