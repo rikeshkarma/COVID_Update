@@ -35,34 +35,34 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.announcement,
-              color: Colors.redAccent,
+              color: Color(0xFF7777FF),
             ),
             title: Text('Stats'),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.healing,
-              color: Colors.redAccent,
+              color: Color(0xFF7777FF),
             ),
             title: Text('Health'),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.new_releases,
-              color: Colors.redAccent,
+              color: Color(0xFF7777FF),
             ),
             title: Text('News'),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.help,
-              color: Colors.redAccent,
+              color: Color(0xFF7777FF),
             ),
             title: Text('Help'),
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Color(0xFF7777FF),
         onTap: _onItemTapped,
       ),
     );
