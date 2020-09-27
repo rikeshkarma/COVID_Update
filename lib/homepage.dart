@@ -1,8 +1,9 @@
+import 'package:covidupdate/stats_elements/screens/tracker.dart';
 import 'package:flutter/material.dart';
-import 'package:covidupdate/stats.dart';
 import 'package:covidupdate/health.dart';
 import 'package:covidupdate/news.dart';
 import 'package:covidupdate/help.dart';
+import 'package:covidupdate/log_elements/screens/Authenticate/sign-out.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,10 +13,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
-    Stats(),
+    Tracker(),
     Health(),
     News(),
     Help(),
+    Signout(),
   ];
 
   void _onItemTapped(int index) {
@@ -59,6 +61,13 @@ class _HomePageState extends State<HomePage> {
               color: Color(0xFF7777FF),
             ),
             title: Text('Help'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.cancel,
+              color: Color(0xFF7777FF),
+            ),
+            title: Text('Log Out'),
           ),
         ],
         currentIndex: _selectedIndex,

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "388479343307",
+    "firebase_url": "https://net-login-ninja.firebaseio.com",
+    "project_id": "net-login-ninja",
+    "storage_bucket": "net-login-ninja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388479343307:android:1209d2859d229cae7f594e",
+        "android_client_info": {
+          "package_name": "com.login_signup.flutter_app_new_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388479343307-ru95ndrfubol0gtejmleu0vptjam7qm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAii5T4D2_3zpM1AK2hbrhNY_bOLsP1aRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388479343307-ru95ndrfubol0gtejmleu0vptjam7qm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

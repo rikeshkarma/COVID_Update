@@ -49,7 +49,7 @@ class _NewsState extends State<News> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Latest Corona News In Nepal"),) ,
+      appBar: AppBar(backgroundColor: Color(0xFF7777FF),title: Text("Latest Corona News In Nepal"),) ,
       body: nloading == true ? Center(child: CircularProgressIndicator(),):SingleChildScrollView(
         child: Column(
             children: <Widget>[
