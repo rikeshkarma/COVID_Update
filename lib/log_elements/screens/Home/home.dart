@@ -1,11 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:covidupdate/log_elements/screens/Home/Covid_User_List.dart';
 import 'package:covidupdate/log_elements/services/auth.dart';
-import 'package:covidupdate/log_elements/services/database.dart';
-import 'package:provider/provider.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-
 class Home extends StatelessWidget {
 
   final AuthService _auth =AuthService();

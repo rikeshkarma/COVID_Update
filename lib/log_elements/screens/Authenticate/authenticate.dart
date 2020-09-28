@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:covidupdate/log_elements/screens/Authenticate/register.dart';
 import 'package:covidupdate/log_elements/screens/Authenticate/sign_in.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class Authenticate extends StatefulWidget {
   @override

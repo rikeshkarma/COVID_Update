@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:covidupdate/log_elements/screens/Authenticate/Forgotten.dart';
 import 'package:covidupdate/log_elements/services/auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:covidupdate/log_elements/shared/constants.dart';
 import 'package:covidupdate/log_elements/shared/loading.dart';
 

@@ -113,7 +113,6 @@ class _ChatChipState extends State<ChatChip> {
                 replies[index],
                 style: TextStyle(
                   fontSize: 18,
-                  fontFamily: 'ProductSans',
                   color: const Color(0xFFFFFFFF),
                 ),
               ),
@@ -156,7 +155,6 @@ class _ChatChipState extends State<ChatChip> {
                   color: _selectedValue[index]
                       ? const Color(0xFFFFFFFF)
                       : const Color(0xFF000000),
-                  fontFamily: 'ProductSans',
                   fontSize: 18,
                 ),
                 labelPadding: EdgeInsets.symmetric(

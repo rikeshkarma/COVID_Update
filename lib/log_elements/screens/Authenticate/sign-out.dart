@@ -10,13 +10,13 @@ class _SignoutState extends State<Signout> {
 
   List<AboutUs> details = [
     AboutUs(
-        image: Image.asset('assets/images/symptoms/cough.png'), text: 'Rikesh Karmacharya'),
+        image: Image.asset('assets/images/pictures/hrishav.png'),
+        text: 'Hrishav Raghu Shrestha', text2: 'Wash your hands often.'),
     AboutUs(
-        image: Image.asset('assets/images/symptoms/fever.png'),
-        text: 'Hrishav Raghu Shrestha'),
+        image: Image.asset('assets/images/pictures/rikesh.png'), text: 'Rikesh Karmacharya', text2: 'Avoid touching your face.'),
     AboutUs(
-        image: Image.asset('assets/images/symptoms/sore_throath.png'),
-        text: 'Shubh Raj Dhital'),
+        image: Image.asset('assets/images/pictures/shubh.png'),
+        text: 'Shubh Raj Dhital', text2: 'Maintain Social Distancing.'),
   ];
 
   final AuthService _auth = AuthService();
@@ -40,6 +40,7 @@ class _SignoutState extends State<Signout> {
                       child: DetailsCard(
                         image: details[index].image,
                         text: details[index].text,
+                        text2: details[index].text2,
                       ),
                     );
                   });
@@ -82,18 +83,21 @@ class _SignoutState extends State<Signout> {
 class AboutUs {
   Image image;
   String text;
+  String text2;
 
-  AboutUs({this.image, this.text});
+  AboutUs({this.image, this.text, this.text2});
 }
 
 class DetailsCard extends StatelessWidget {
   DetailsCard({
     this.image,
     this.text,
+    this.text2,
   });
 
   Image image;
   String text;
+  String text2;
 
   @override
   Widget build(BuildContext context) {
@@ -123,6 +127,7 @@ class DetailsCard extends StatelessWidget {
         ),
         Positioned(
           left: width * 0.01,
+          bottom: width*0.06,
           child: SizedBox(
               child: image,
               height: height * 0.16,
@@ -134,9 +139,23 @@ class DetailsCard extends StatelessWidget {
             text,
             style: TextStyle(
                 color: Colors.black,
-                fontFamily: 'ProductSans',
                 fontSize: 20,
                 fontWeight: FontWeight.bold
+            ),
+          ),
+        ),
+        Container(
+          child: Positioned(
+            left: width * 0.3,
+            bottom: width*0.15,
+            child: Text(
+              text2,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic
+              ),
             ),
           ),
         ),

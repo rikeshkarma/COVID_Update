@@ -37,7 +37,6 @@ class _ChatState extends State<Chat> {
               widget.text,
               style: TextStyle(
                 fontSize: 18,
-                fontFamily: 'ProductSans',
               ),
             ),
           );
