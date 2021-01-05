@@ -1,6 +1,6 @@
 # covidupdate
 
-3rd year 2nd semester Project 
+COVID-19 Update Application
 
 ## Getting Started
 
